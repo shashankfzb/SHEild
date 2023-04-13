@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+## THIS PROJECT DOES NOT HAVE BUILD FOLDER BECAUSE IT HAS A VERY BIG SIZE ##
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
