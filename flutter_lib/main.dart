@@ -38,29 +38,69 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      // home: Splash(),
-      home: AnimatedSplashScreen(
+      home: Splash(),
+      // home: AnimatedSplashScreen(
 
-        duration: 3000,
-        nextScreen: MyHomePage(title: 'DEMO'),
-        splash: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                // image: NetworkImage('C:/Users/Udyan/StudioProjects/she_ild/lib/Clip_path_group.png'),
-                // image: AssetImage('Clip_path_group.png'),
-                image: FileImage(File("C:/Users/Udyan/StudioProjects/she_ild/lib/Clip_path_group.png")),
-                fit: BoxFit.cover
-            ) ,
-          ),
-        ),
-        // backgroundColor: Colors.blue,
-        splashTransition: SplashTransition.rotationTransition,
-        // pageTransitionType: PageTransitionType.scale,
-        //   splash: Icons.home,
+      //   duration: 3000,
+      //   nextScreen: MyHomePage(title: 'DEMO'),
+      //   splash: Image.asset('lib/Clip_path_group.png', scale: 100,),
+      // splashIconSize: Image.asset('lib/Clip_path_group.png')._naturalResolution,
+      // splash: SizedBox.expand(
+      //   child: Container(
+      //     padding: const EdgeInsets.all(16.0),
+      //     width: double.infinity,
+      //     height: double.infinity,
+      //     alignment: Alignment.center,
+      //     // height: ,
+      //     decoration: BoxDecoration(
+      //       image: DecorationImage(
+      //           image: AssetImage("lib/Clip_path_group.png"),
+      //           // image: AssetImage('Clip_path_group.png'),
+      //           // image: FileImage(File("C:/Users/Udyan/StudioProjects/she_ild/lib/Clip_path_group.png")),
+      //           fit: BoxFit.cover
+      //       ) ,
+      //     ),
+      //   )
+      // ),
+      // backgroundColor: Colors.blue,
+      // splashTransition: SplashTransition.fadeTransition,
+      // pageTransitionType: PageTransitionType.scale,
+      //   splash: Icons.home,
 
 
-      )
+      // )
+      // home: Screen()
     );
+  }
+}
+
+class Screen extends StatefulWidget {
+  const Screen({super.key});
+
+  @override
+  State<Screen> createState() => _ScreenState();
+}
+
+class _ScreenState extends State<Screen> {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox.expand(
+          child: Container(
+            padding: const EdgeInsets.all(16.0),
+            width: double.infinity,
+            height: double.infinity,
+            alignment: Alignment.center,
+            // height: ,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("lib/Clip_path_group.png"),
+                  // image: AssetImage('Clip_path_group.png'),
+                  // image: FileImage(File("C:/Users/Udyan/StudioProjects/she_ild/lib/Clip_path_group.png")),
+                  fit: BoxFit.cover
+              ) ,
+            ),
+          )
+        );
   }
 }
 
