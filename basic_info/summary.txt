@@ -1,0 +1,12 @@
+The SHEild app is a new-age women's safety app that aims to enhance the safety of women
+in potentially dangerous situations. It is triggered by an external wearable device such as 
+a watch and collects multimodal data from a mobile device, such as audio, even in situations 
+where the user may not be able to operate the mobile device. The app uses Solana Blockchain 
+technology to securely store user information during registration, and the data is stored 
+on a cloud server hosted on Google Cloud Platform. The app includes features such as 
+triggering emergency SOS alerts to authorized personnel, identifying nearby police stations 
+and app users for help, trusted contacts for notification in emergencies, real-time 
+location sharing, and customization settings for user preferences. The app is designed with 
+a user-friendly interface using Figma and built using Flutter for cross-platform 
+compatibility. The app has the potential to make a tangible impact on women's safety and 
+empower them in the modern era.
