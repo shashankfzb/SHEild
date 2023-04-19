@@ -142,19 +142,95 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     
     return Scaffold(
+
+      backgroundColor: Color.fromARGB(255, 33, 134, 216),
       
       body: Center(
-        
-        child: OutlinedButton(
+        // child: Column(
+          // mainAxisSize: MainAxisSize.min,
+        child: Stack(
+          alignment: AlignmentDirectional.center,
+          
+          
+          children: [
 
-          onPressed: (){
-            Navigator.push(
-              context, CupertinoPageRoute(builder: (context)=> SecondScreen()), 
-              );
-          },
-          child: Image.asset("C:/Users/Udyan/StudioProjects/she_ild/lib/Group_1.png")
-           
+            Positioned(
+              top: 585,
+
+              child: OutlinedButton(            
+                onPressed: (){ },
+                // child: Image.asset("Group_1.png")
+                child: Image.asset("assets/Group_1.png"),
+                style: ButtonStyle(                
+                  padding: MaterialStateProperty.all<EdgeInsets>(
+                    EdgeInsets.all(0)),
+                    
+                ),
+                
+              ),
+              width: 250,
+              height: 50,
+
+            ),
+            // SizedBox(
+            
+            //   child: OutlinedButton(            
+            //     onPressed: (){ },
+            //     // child: Image.asset("Group_1.png")
+            //     child: Image.asset("assets/Group_1.png"),
+            //     style: ButtonStyle(
+                
+            //       padding: MaterialStateProperty.all<EdgeInsets>(
+            //         EdgeInsets.all(0)),
+                    
+            //     ),
+                
+            //   ),
+            //   width: 250,
+            //   height: 50,
+              
+            // ),
+            Positioned(
+              bottom: 100,
+              child: OutlinedButton(
+                child: Image.asset("assets/Register_button.png"),
+                onPressed: () {},
+                style: ButtonStyle(
+                  padding: MaterialStateProperty.all<EdgeInsets>(
+                    EdgeInsets.all(0)),
+                    
+                ),
+              ),
+              width: 250,
+              height: 50,
+            ),
+            // SizedBox.fromSize(
+              
+            //   // height: 20,
+            //   size: Size(288, 100),
+            //   child: OutlinedButton(
+                
+            //     onPressed: () {}, 
+            //     child: Image.asset("assets/Register_button.png"),
+            //   ),
+              
+            //   // width: 288,
+            //   // height: 100,
+            // )
+              // ],
+          ]
         ),
+        
+        // child: OutlinedButton(
+
+        //   onPressed: (){
+        //     Navigator.push(
+        //       context, CupertinoPageRoute(builder: (context)=> SecondScreen()), 
+        //       );
+        //   },
+        //   child: Image.asset("C:/Users/Udyan/StudioProjects/she_ild/lib/Group_1.png")
+           
+        // ),
           // ],
         ),
       );
